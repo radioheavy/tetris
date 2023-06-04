@@ -1,39 +1,53 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: black;
-    color: white;
-    font-family: 'Pixel', Arial, sans-serif;
-  }
-  
-  #game-container {
-    position: relative;
-    height: 600px;
-    width: 300px;
-    border: 1px solid white;
-  }
-  
-  #score-board {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white;
-    font-size: 20px;
-  }
-  
-  #game-board {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .cell {
-    position: absolute;
-    height: 29px;
-    width: 29px;
-    border: 1px solid white;
-    background: lime;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+  color: white;
+  font-family: 'Pixel', Arial, sans-serif;
+}
+
+#game-container {
+  position: relative;
+  height: 600px;
+  width: 300px;
+  border: 1px solid white;
+}
+
+#score-board {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+#game-board {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.cell {
+  position: absolute;
+  height: 29px;
+  width: 29px;
+  border: 1px solid white;
+  background: lime;
+  box-shadow: 0 0 5px lime; /* Add this */
+  transition: all 0.1s; /* And this */
+}
+
+#score-board {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#current-score, #high-score {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 10px 0;
+}
